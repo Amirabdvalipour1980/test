@@ -9,5 +9,5 @@ for h in range(5):
         print("ada shoma bosorg tar ast!")
     elif a == m:
         print("to bordi")
-    else:
+    elif h == 0:
         print("to bachty")
