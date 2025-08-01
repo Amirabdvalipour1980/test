@@ -1,5 +1,7 @@
 inputn = int(input("number:"))
-if inputn <= 
+if inputn <= 1:
+    print("adad aval nist")
+elif 
 
 # if h % 2 == 0:
 #    print("adad aval ")
