@@ -14,7 +14,7 @@ l3 = tk.Label(window, text = 'کلمه ی عبور')
 def on_click():
    if e1.get() != '0123456789':
         messagebox.showinfo('in yek info ast', 'شماره ی تماس خود را وارد کنید' )
-   elif e2.get() != 'حسین':
+   elif e2.get() != '12345':
        messagebox.showinfo('in yek info ast', 'نام و نام خانوادگی خود را وارد کنید' )
    elif e3.get() != '123456':
        messagebox.showinfo('in yek info ast', 'کلمه ی عبور خود را درست وارد کنید' )
