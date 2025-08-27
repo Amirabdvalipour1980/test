@@ -1,0 +1,28 @@
+import tkinter as tk
+from tkinter import messagebox
+
+class TicTacToegui:
+    def __init__(self, board_size=3):
+        self.board_size = board_size
+        self.window = tk.TK()
+        self.window.title('toc tac toe')
+        self.board = [[' 'for _ in range(self.board_size)] for _ in range(self.board_size)]
+        self.current_player = 'x'
+        self.create_board_buttons()
+
+    def create_board_buttons(self):
+        self.buttons = [[tk.buttons(self.window, text = " ", font = ('Arial', 24), width = 3, hight = 1,command = lambda row=row, col=col: self.make_move(row, col)) for col in range(self.board_size)]for row in range(self.board_size)]
+        for row in range(self.board_size):
+            for col in range(self.board_size):
+                self.buttons[row][col].grid(row=row, col=col)
+
+    def make_move(self, row, col):
+        pass
+
+    def rin(self):
+        self.window.mainloop()
+
+if __name__ == "_main_":
+    board_size = int(input("enter the size of the bord(e.g.,3 for 3x3, 4 for 4x4, etc.):"))
+    tic_tac_toe = TicTacToegui(board_size)
+    tic_tac_toe.run
